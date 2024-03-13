@@ -1,40 +1,24 @@
-Monster Hunter Database
-Este proyecto es una aplicación de base de datos para gestionar información sobre monstruos del juego Monster Hunter. Permite crear, leer, actualizar y eliminar datos relacionados con monstruos, elementos y ubicaciones en el juego.
+# Monster Hunter Database
 
-Requisitos
-Para ejecutar este proyecto, necesitarás lo siguiente:
+## Overview
+This project is a database application for managing information about monsters in the game Monster Hunter. It allows for the creation, reading, updating, and deletion of data related to monsters, elements, and locations in the game.
 
-Java Development Kit (JDK) 8 o superior
-Apache Maven
-Base de datos PostgreSQL (u otro compatible con JPA)
-IntelliJ IDEA (u otro IDE compatible con Java)
-Configuración de la Base de Datos
-Antes de ejecutar la aplicación, asegúrate de configurar la base de datos correctamente:
+## Requirements
+To run this project, you'll need the following:
 
-Crea una base de datos en tu servidor PostgreSQL.
-Abre el archivo persistence.xml en el directorio src/main/resources/META-INF.
-Edita la URL de conexión, el nombre de usuario y la contraseña para que coincidan con tu configuración de base de datos:
-xml
-Copy code
-<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/nombre_base_de_datos"/>
-<property name="javax.persistence.jdbc.user" value="usuario"/>
-<property name="javax.persistence.jdbc.password" value="contraseña"/>
-Ejecución
-Para ejecutar la aplicación en IntelliJ IDEA, sigue estos pasos:
+- Java Development Kit (JDK) 8 or higher
+- Apache Maven
+- PostgreSQL database (or another JPA compatible database)
+- IntelliJ IDEA (or another Java compatible IDE)
 
-Clona este repositorio en tu máquina local.
-Abre IntelliJ IDEA y selecciona "Open" desde el menú principal.
-Navega hasta el directorio del proyecto y selecciona la carpeta raíz.
-Espera a que IntelliJ importe el proyecto.
-Haz clic derecho en el archivo Main.java en el directorio src/main/java/Miprograma y selecciona "Run Main.main()".
-Uso
-Una vez que la aplicación esté en funcionamiento, sigue las instrucciones en la consola para interactuar con la base de datos. Puedes crear, leer, actualizar y eliminar monstruos, elementos y ubicaciones según sea necesario.
+## Database Configuration
+Before running the application, make sure to configure the database correctly:
 
-Nota Importante
-Recuerda que al descargar el proyecto y configurar la base de datos, debes cambiar los datos de conexión en el archivo persistence.xml para que coincidan con tu entorno local. Si no se configura correctamente, la aplicación no podrá conectarse a la base de datos.
+1. Create a database on your PostgreSQL server.
+2. Open the `persistence.xml` file in the `src/main/resources/META-INF` directory.
+3. Edit the connection URL, username, and password to match your database configuration:
 
-
-
-
-
-
+   ```xml
+   <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/your_database_name"/>
+   <property name="javax.persistence.jdbc.user" value="your_username"/>
+   <property name="javax.persistence.jdbc.password" value="your_password"/>
