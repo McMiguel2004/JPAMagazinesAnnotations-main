@@ -28,11 +28,8 @@ MDMS es un sistema de gestión de base de datos para almacenar información rela
 - Conexión a una base de datos compatible
 
 ## Notas
-
-El sistema está diseñado para interactuar con una base de datos que cumple con el esquema definido en el archivo de configuración de Hibernate.
-
-La población de datos desde archivos XML sigue el formato esperado, incluyendo información sobre monstruos, especies, elementos y ubicaciones.
-
+- El sistema está diseñado para interactuar con una base de datos que cumple con el esquema definido en el archivo de configuración de Hibernate.
+- La población de datos desde archivos XML sigue el formato esperado, incluyendo información sobre monstruos, especies, elementos y ubicaciones.
 
 ## Configuración de la conexión a la base de datos
 Antes de ejecutar la aplicación, asegúrese de configurar la conexión a la base de datos en el archivo `persistence.xml`. Siga estos pasos:
@@ -53,4 +50,3 @@ Ejemplo de configuración en `persistence.xml`:
         <!-- Otras propiedades de Hibernate -->
     </properties>
 </persistence-unit>
-
